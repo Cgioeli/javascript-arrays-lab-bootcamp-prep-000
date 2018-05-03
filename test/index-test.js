@@ -23,7 +23,7 @@ describe('Arrays', function() {
   describe('destructivelyPrependKitten(name)', function() {
     it('prepends a kitten to the beginning of the kittens array', function() {
       destructivelyPrependKitten("Bob")
-      function destructivelyPrependKitten(kittens, element) {
+      function destructivelyPrependKitten() {
       kittens.unshift("Bob")
       return kittens
      }
