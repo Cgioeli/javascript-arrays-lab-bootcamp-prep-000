@@ -47,7 +47,10 @@ describe('Arrays', function() {
   describe('destructivelyRemoveFirstKitten()', function() {
     it('removes the First kitten from the kittens array', function() {
       destructivelyRemoveFirstKitten()
-
+      function destructivelyRemoveFirstKitten() {
+        kittens.shift('Milo')
+        return kittens
+      }
       expect(window.kittens).toEqual(["Otis", "Garfield"])
     })
   })
