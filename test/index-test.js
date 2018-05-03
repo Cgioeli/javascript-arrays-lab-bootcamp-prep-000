@@ -85,8 +85,8 @@ describe('Arrays', function() {
       expect(removeLastKitten()).toEqual(["Milo", "Otis"])
       function removeLastKitten() {
         
-        kittens = kittens.slice(0, kittens.length - 1)
-        return kittens
+        const morekittens = morekittens.slice(0, kittens.length - 1)
+        return morekittens
       
       expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
       }
