@@ -1,5 +1,5 @@
 describe('Arrays', function() {
-  const kittens = ['Milo', 'Otis', 'Garfield']
+  var kittens = ['Milo', 'Otis', 'Garfield']
   beforeEach(function() {
     window.kittens = ['Milo', 'Otis', 'Garfield'];
   });
