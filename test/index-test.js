@@ -23,8 +23,8 @@ describe('Arrays', function() {
   describe('destructivelyPrependKitten(name)', function() {
     it('prepends a kitten to the beginning of the kittens array', function() {
       destructivelyPrependKitten("Bob")
-      function destructivelyPrependKitten(kittens, element){
-       kittens.unshift(element)
+      function destructivelyPrependKitten(kittens, element) {
+       kittens.unshift("Bob")
        return kittens
      }
       expect(window.kittens).toEqual(["Bob", "Milo", "Otis", "Garfield"])
