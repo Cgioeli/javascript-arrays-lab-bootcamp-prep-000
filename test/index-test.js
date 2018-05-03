@@ -59,11 +59,11 @@ describe('Arrays', function() {
   describe('appendKitten(name)', function() {
     it('appends a kitten to the kittens array and returns a new array, leaving the kittens array unchanged', function() {
       expect(appendKitten("Broom")).toEqual(["Milo", "Otis", "Garfield", "Broom"])
-
+        function appendKitten() {
+          kittens = ['Broom',... kittens]
+          return kittens
       expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
-      function appendKitten() {
-        kittens = ['Broom',... kittens]
-        return kittens
+      
       }
     })
   })
