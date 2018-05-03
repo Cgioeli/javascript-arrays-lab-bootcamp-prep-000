@@ -97,7 +97,7 @@ describe('Arrays', function() {
     it('removes the first kitten from the kittens array and returns a new array, leaving the kittens array unchanged', function() {
       expect(removeFirstKitten()).toEqual(["Otis", "Garfield"])
       function removeFirstKitten() {
-       kittens = kittens.slice(1)
+       
        return kittens
       expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
       }
