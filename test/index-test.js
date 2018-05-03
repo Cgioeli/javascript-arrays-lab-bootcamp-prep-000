@@ -72,9 +72,9 @@ describe('Arrays', function() {
     it('prepends a kitten to the kittens array and returns a new array, leaving the kittens array unchanged', function() {
       expect(prependKitten("Arnold")).toEqual(["Arnold", "Milo", "Otis", "Garfield"])
       function prependKitten() {
-        kittens = ['Arnold',... kittens]
-        kittens = kittens.slice(0, kittens.length - 1)
-        return kittens
+        const morekittens = ['Arnold',... kittens]
+        morekittens = morekittens.slice(0, kittens.length - 1)
+        return morekittens
       expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
       }
     })
