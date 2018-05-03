@@ -35,11 +35,11 @@ describe('Arrays', function() {
   describe('destructivelyRemoveLastKitten()', function() {
     it('removes the last kitten from the kittens array', function() {
       destructivelyRemoveLastKitten()
-
-      expect(window.kittens).toEqual(["Milo", "Otis"])
       function destructivelyRemoveLastKitten() {
         kittens.pop('Garfield')
         return kittens
+      expect(window.kittens).toEqual(["Milo", "Otis"])
+      
       }
     })
   })
