@@ -26,8 +26,9 @@ describe('Arrays', function() {
       function destructivelyPrependKitten() {
         kittens.unshift('Bob')
         return kittens
-     }
+    
       expect(window.kittens).toEqual(["Bob", "Milo", "Otis", "Garfield"])
+      }
     })
   })
 
