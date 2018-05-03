@@ -1,5 +1,5 @@
 describe('Arrays', function() {
-  var kittens = ['Milo', 'Otis', 'Garfield']
+  const kittens = ['Milo', 'Otis', 'Garfield']
   beforeEach(function() {
     window.kittens = ['Milo', 'Otis', 'Garfield'];
   });
@@ -61,7 +61,7 @@ describe('Arrays', function() {
       expect(appendKitten("Broom")).toEqual(["Milo", "Otis", "Garfield", "Broom"])
         function appendKitten() {
          const morekittens = [... kittens, 'Broom']
-          return kittens
+          return morekittens
       expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
       
       }
