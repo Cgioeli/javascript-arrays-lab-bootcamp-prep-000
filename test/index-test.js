@@ -73,7 +73,7 @@ describe('Arrays', function() {
       expect(prependKitten("Arnold")).toEqual(["Arnold", "Milo", "Otis", "Garfield"])
       function prependKitten() {
         kittens = ['Arnold',... kittens]
-        kittens = [0]
+        kittens.slice[]
         return kittens
       expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
       }
